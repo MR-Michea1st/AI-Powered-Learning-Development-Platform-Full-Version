@@ -6,4 +6,6 @@ media/
 .env
 .DS_Store
 
+backend/.env
+frontend/.env
 backend/staticfiles/
