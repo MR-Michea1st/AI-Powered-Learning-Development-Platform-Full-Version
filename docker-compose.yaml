@@ -1,0 +1,168 @@
+services:
+
+  postgres:
+    image: postgres:15
+    container_name: my_postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    restart: unless-stopped
+
+    ports:
+      - "6379:6379"
+
+    volumes:
+      - redis_data:/data
+
+
+  backend:
+    build:
+      context: ./backend
+
+    container_name: django_backend
+    restart: unless-stopped
+
+    env_file:
+      - ./backend/.env
+
+    ports:
+      - "8000:8000"
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+    volumes:
+      - ./backend:/app
+      - media_data:/app/media
+      - static_data:/app/static
+
+    command: >
+      sh -c "
+      python manage.py migrate &&
+      python manage.py collectstatic --noinput &&
+      gunicorn config.wsgi:application --bind 0.0.0.0:8000
+      "
+
+
+  ai-services:
+    build:
+      context: ./backend
+
+    container_name: ai_services
+    restart: unless-stopped
+
+    env_file:
+      - ./backend/.env
+
+    ports:
+      - "8001:8001"
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+    volumes:
+      - ./backend:/app
+
+    command: >
+      uvicorn ai_services.main:app
+      --host 0.0.0.0
+      --port 8001
+
+
+  celery:
+    build:
+      context: ./backend
+
+    container_name: celery_worker
+    restart: unless-stopped
+
+    env_file:
+      - ./backend/.env
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+    volumes:
+      - ./backend:/app
+
+    command: celery -A config worker -l INFO
+
+
+  celery-beat:
+    build:
+      context: ./backend
+
+    container_name: celery_beat
+    restart: unless-stopped
+
+    env_file:
+      - ./backend/.env
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+    volumes:
+      - ./backend:/app
+
+    command: celery -A config beat -l INFO
+
+
+  frontend:
+    build:
+      context: ./frontend
+
+    container_name: react_frontend
+    restart: unless-stopped
+
+    ports:
+      - "3000:3000"
+
+    depends_on:
+      - backend
+      - ai-services
+
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+
+volumes:
+  postgres_data:
+  redis_data:
+  media_data:
+  static_data:

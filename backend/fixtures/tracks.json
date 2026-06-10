@@ -1,0 +1,54 @@
+[
+    {
+        "model": "courses.track",
+        "pk": 1,
+        "fields": {
+            "name": "Cybersecurity Specialist",
+            "description": "A Carrier track that will guide you to be Cybersecurity Specialist",
+            "difficulty_level": "ADV",
+            "instructor": 3,
+            "thumbnail": "tracks/thumbnails/Cyber_security_specialist_job_description_b46477e903.jpeg",
+            "status": "PSH",
+            "created_at": "2026-04-23T08:09:03.463Z"
+        }
+    },
+    {
+        "model": "courses.track",
+        "pk": 2,
+        "fields": {
+            "name": "AI Engineer",
+            "description": "A career track that will guide you to be an AI Engineer",
+            "difficulty_level": "ADV",
+            "instructor": 10,
+            "thumbnail": "tracks/thumbnails/AIEngineer.jpeg",
+            "status": "PSH",
+            "created_at": "2026-04-23T08:13:46.037Z"
+        }
+    },
+    {
+        "model": "courses.track",
+        "pk": 3,
+        "fields": {
+            "name": "Full-Stack Web Developer",
+            "description": "A career track that will guide you to be a Full-Stack Developer using ReactJS and Django",
+            "difficulty_level": "INT",
+            "instructor": 17,
+            "thumbnail": "tracks/thumbnails/What-Is-A-Full-Stack-Developer-a.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T08:19:04.051Z"
+        }
+    },
+    {
+        "model": "courses.track",
+        "pk": 4,
+        "fields": {
+            "name": "Computer Science Fundementals",
+            "description": "Start learning the basics of Computer Science before diving into other career tracks",
+            "difficulty_level": "BEG",
+            "instructor": 20,
+            "thumbnail": "tracks/thumbnails/csfund.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T08:20:46.662Z"
+        }
+    }
+]

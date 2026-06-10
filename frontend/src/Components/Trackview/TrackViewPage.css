@@ -1,0 +1,138 @@
+.track-view-cont {
+
+    width: 100%;
+}
+
+
+.track-name {
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 0;
+}
+
+.learning-track {
+
+    text-align: center;
+    margin-top: 2px;
+
+}
+
+
+.track-info-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin: 20px;
+}
+
+.track-info {
+    background-color: var(--signUp-bg);
+    color: var(--signUp-color);
+    padding: 10px;
+    border-radius: 20px;
+    width: 10%;
+    text-align: center;
+}
+
+/* courses */
+.courses {
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    margin:50px auto;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.course-item {
+    /* background: rgba(0, 0, 0, 0.03); */
+    background-color: #100d0d3e;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.course-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+
+}
+
+.course-name {
+    color: var(--signUp-bg);
+}
+
+.course-btn {
+    background: #013cc7;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 10px;
+    width: 80px;
+}
+
+.course-btn:hover{
+    background-color: #0450ff;
+}
+
+.course-bar {
+    height: 18px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.course-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6b46c1, #9f7aea);
+    border-radius: 12px 0 0 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 820px) {
+    .profile-sections {
+        grid-template-columns: 1fr;
+        /* fallback for any remaining grid usage */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .info-text {
+        text-align: center;
+    }
+
+    /* scale avatar down on medium screens */
+    .avatar {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 420px) {
+    .avatar {
+        width: 96px;
+        height: 96px;
+    }
+
+    .profile-name {
+        font-size: 1.4rem;
+    }
+}

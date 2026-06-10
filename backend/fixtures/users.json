@@ -1,0 +1,744 @@
+[
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$GeeRnZHhEZZu6qUwsU1ogT$krW6NJtVlfhgB5t6U6fkKHPk8yWdZ47mOTtBc61N5yc=",
+            "last_login": "2026-05-13T16:43:42.710Z",
+            "is_superuser": true,
+            "email": "micho@super.com",
+            "full_name": "Micheal Jabbour",
+            "role": "INS",
+            "skill_level": "BEG",
+            "profile_picture": "profile_pics/AI_Interviewer.png",
+            "is_active": true,
+            "is_staff": true,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 3,
+        "fields": {
+            "password": "NetworkChuck",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "networkchuck@test.com",
+            "full_name": "NetworkChuck",
+            "role": "INS",
+            "skill_level": "ADV",
+            "profile_picture": "profile_pics/networkchuck.jpg",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": [
+                22
+            ]
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 4,
+        "fields": {
+            "password": "TheCyberMentor",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "thecybermentor@test.com",
+            "full_name": "The Cyber Mentor",
+            "role": "INS",
+            "skill_level": "ADV",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 5,
+        "fields": {
+            "password": "WsCubeCyberSecurity",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "wscubecybersecurity@test.com",
+            "full_name": "Ws Cube Cyber Security",
+            "role": "INS",
+            "skill_level": "ADV",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 6,
+        "fields": {
+            "password": "HackerSploit",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "hackersploit@test.com",
+            "full_name": "HackerSploit",
+            "role": "INS",
+            "skill_level": "ADV",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 7,
+        "fields": {
+            "password": "LiveOverflow",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "liveoverflow@test.com",
+            "full_name": "LiveOverflow",
+            "role": "INS",
+            "skill_level": "ADV",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 8,
+        "fields": {
+            "password": "3Blue1Brown",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "3blue1brown@test.com",
+            "full_name": "3Blue1Brown",
+            "role": "INS",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 9,
+        "fields": {
+            "password": "Weights&Biases",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "weights&biases@test.com",
+            "full_name": "Weights&Biases",
+            "role": "INS",
+            "skill_level": "ADV",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 10,
+        "fields": {
+            "password": "DeepLearningAI",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "deeplearningai@test.com",
+            "full_name": "DeepLearningAI",
+            "role": "INS",
+            "skill_level": "INT",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 11,
+        "fields": {
+            "password": "JeremyHoward",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "jeremyhoward@test.com",
+            "full_name": "Jeremy Howard",
+            "role": "INS",
+            "skill_level": "ADV",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 12,
+        "fields": {
+            "password": "AndrejKarpathy",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "andrejkarpathy@test.com",
+            "full_name": "Andrej Karpathy",
+            "role": "INS",
+            "skill_level": "ADV",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 13,
+        "fields": {
+            "password": "WBWebDevelopmentSolutions",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "wbwebdevelopmentsolutions@test.com",
+            "full_name": "WB Web Development Solutions",
+            "role": "INS",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 14,
+        "fields": {
+            "password": "Codevolution",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "codevolution@test.com",
+            "full_name": "Codevolution",
+            "role": "INS",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 15,
+        "fields": {
+            "password": "DatawithBaraa",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "datawithbaraa@test.com",
+            "full_name": "Data with Baraa",
+            "role": "INS",
+            "skill_level": "INT",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 16,
+        "fields": {
+            "password": "NetNinja",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "netninja@test.com",
+            "full_name": "Net Ninja",
+            "role": "INS",
+            "skill_level": "INT",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 17,
+        "fields": {
+            "password": "BugBytes",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "bugbytes@test.com",
+            "full_name": "BugBytes",
+            "role": "INS",
+            "skill_level": "ADV",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 18,
+        "fields": {
+            "password": "TheCherno",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "thecherno@test.com",
+            "full_name": "The Cherno",
+            "role": "INS",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 19,
+        "fields": {
+            "password": "BroCode",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "brocode@test.com",
+            "full_name": "Bro Code",
+            "role": "INS",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 20,
+        "fields": {
+            "password": "NesoAcademy",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "nesoacademy@test.com",
+            "full_name": "Neso Academy",
+            "role": "INS",
+            "skill_level": "ADV",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 22,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$8YCGjlV2hwqPuYuqslefOO$zdyJAWf5IM1n4MhAyexir5aeoQb9LmSKw7x4zvgPHHw=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "micheal.jabbour@gmail.com",
+            "full_name": "Micheal Jabbour",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 23,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$ljoDNNkURjvBlvj6hZckoK$b+psI6tJ37Lfdi9WIUDHuV4I5flbMYOtin3RnHAIf8I=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "micheal.jabbour@test.com",
+            "full_name": "Micheal Jabbour",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 24,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$xJznHDPIC2pDBgwaSoOOi8$TopLVXH/NBNnueMeIqsVpoBK/q3qjGJUnXBQyQpplL4=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "nawar@test.com",
+            "full_name": "Nawar",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "profile_pics/download_1_19kjLO9.jpg",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 25,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$nHEmLl1eFWz5G1FZOr5GFO$pCU9R/35bgPVVXWsEPSSR6p/MwzL9ZyY5tAULmJYFWY=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "mohsen@test.com",
+            "full_name": "mohsen",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "profile_pics/_Interstellar__advance_movie_poster_2014__UkodWDw.jpg",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 27,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$BZU05L4DlWWDCOVtl7VPLM$8VYs+QYW/5RRvKgIQHmUpQCe9vqUD5GjGzZQJLY3QY4=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "micho@test.com",
+            "full_name": "micho",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 28,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$rFt9SriE4LydLMF5MGsyoU$eT0pUAzwCsQAqxJlPIectDxvw8vwU7cEK5CWspC5gis=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "mohsen2@test.com",
+            "full_name": "mohsen sleman",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 29,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$KOeI2i4goCbOc0zciYLIFY$Do2MgW0ZKJF1p6lKzlxEnomeqpQgMSqH28V1OmDK7CY=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "mohsen3@test.com",
+            "full_name": "mohsen sleman",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 30,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$mvaSBBHIifeIZjBXrEuTwE$ztWli5H9reIAiub0VNzflNa/xwTli1lzsEPbsdxgKz0=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "mohsenn@test.com",
+            "full_name": "mohsenn",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 31,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$UEX9WkFygPlTEvV75wi0GM$jiNvPaqO/wM6erjQ1HEUleSxo4iCVs7SmCiwq3x00wM=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "mohsen4@test.com",
+            "full_name": "mohsen3",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "FENB7LWRT2DR6G4HSCYNKK7TTX7RGG2Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 32,
+        "fields": {
+            "password": "!2ulzo4KEooUSHqDXG50PbDz3nS6fEkb2hVSooz00",
+            "last_login": "2026-05-17T18:18:35.261Z",
+            "is_superuser": false,
+            "email": "michealeng232@gmail.com",
+            "full_name": "Micheal Jabbour",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": true,
+            "otp_secret": "M3XT7D7JOJT5NFUFGFN6ITSUEQKQ372B",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 33,
+        "fields": {
+            "password": "!ew97JFR3z42wnOTmfxPnS7Ybgkben8u9OKURa9vH",
+            "last_login": "2026-06-06T16:53:24.411Z",
+            "is_superuser": false,
+            "email": "",
+            "full_name": "Micheal Jabbour",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": true,
+            "otp_secret": "ISVWMESF4I6BGWCO4HML43AR4J3EAMUG",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 34,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$su02tYIIAYvhD1dZakXJo8$DXLGpNIWfAoUfP/l1jpUNNU1X2oSJHH3P5vEuc+apfs=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "Michoo@test.com",
+            "full_name": "Michoo",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "6L3LQ6YMZXOXW6HRVQJMKUJIJU6OXHS5",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 35,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$Vuf7GXCWWuLkeIUiUScBkv$H6CEcC9+qJ3RYyRL1mpKIlm3W4QYrpwzxlNLTkYopcM=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "Michoo2@test.com",
+            "full_name": "Michoo2",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "3UF2FYC2YFLNWHXMVTSB6UOF2UNROPSW",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 36,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$nt34dJq6IQ3NxGh1ZvpmI7$TOQTor00GKxnuMgX+6TLWk7y3Ghma9zOWxsllri0wbc=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "Michooo2@test.com",
+            "full_name": "Michooo2",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "KH2HF4MLGXIWWHI2LC25SURQOM4KJO7W",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 41,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$UiKrnrdwf3UNCMALkVEgUH$AEq5LwdB7shaEUk4Sa+bEX9tuB+CYdslPmPks800MQY=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "micheal.jabbour.13@gmail.com",
+            "full_name": "Micheal Jabbour",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "profile_pics/download_1_EArpLbz.jpg",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": true,
+            "otp_secret": "VCW5PSGLJ6QSEA63UUSVSATZQF2HGF6W",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 42,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$9IyCXhxRRG2sJaKqGEk7ao$ARUEedQcHIS4NacjM1gE2TkeBvXQtJdFpdSxAWhAuEw=",
+            "last_login": "2026-06-06T16:55:49.288Z",
+            "is_superuser": true,
+            "email": "codeverse.learning.platform.auth@gmail.com",
+            "full_name": "CodeVerse",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": true,
+            "is_verified": true,
+            "otp_secret": "B6NMIZERBOSELEFWGO4P3RDC7EGSXSV3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 43,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$ihDpMIxbMgLsrR7XJEBTeK$v6QWOcyTgeQLLfjI3Pkm7X3oI0ctKXokZQ77bp1OvJA=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "michealjabbour3@gmail.com",
+            "full_name": "micho",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": true,
+            "otp_secret": "RLO4JKHQ2543PCG2DJ3OWZC5KZBLE5OD",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 44,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$nfNniljmHsjoTHHzN7QrFI$UMoEex+I86ewMp4q4Ymw2ZRbc6QnT9rxhnTUyvbIgQ8=",
+            "last_login": null,
+            "is_superuser": false,
+            "email": "michojabbour5@gmail.com",
+            "full_name": "michojabbour5",
+            "role": "STU",
+            "skill_level": "BEG",
+            "profile_picture": "",
+            "is_active": true,
+            "is_staff": false,
+            "is_verified": false,
+            "otp_secret": "CZ2PJTCYP6FQIQRYSY6ANASX6TYVCEXU",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

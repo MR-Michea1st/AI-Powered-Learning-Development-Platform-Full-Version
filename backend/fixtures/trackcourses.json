@@ -1,0 +1,182 @@
+[
+    {
+        "model": "courses.trackcourse",
+        "pk": 1,
+        "fields": {
+            "track": 1,
+            "course": 1,
+            "order": 1
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 2,
+        "fields": {
+            "track": 1,
+            "course": 2,
+            "order": 2
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 3,
+        "fields": {
+            "track": 1,
+            "course": 3,
+            "order": 3
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 4,
+        "fields": {
+            "track": 1,
+            "course": 4,
+            "order": 4
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 5,
+        "fields": {
+            "track": 1,
+            "course": 5,
+            "order": 5
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 6,
+        "fields": {
+            "track": 2,
+            "course": 6,
+            "order": 1
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 7,
+        "fields": {
+            "track": 2,
+            "course": 7,
+            "order": 2
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 8,
+        "fields": {
+            "track": 2,
+            "course": 8,
+            "order": 3
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 9,
+        "fields": {
+            "track": 2,
+            "course": 9,
+            "order": 4
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 10,
+        "fields": {
+            "track": 2,
+            "course": 10,
+            "order": 5
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 11,
+        "fields": {
+            "track": 3,
+            "course": 11,
+            "order": 1
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 12,
+        "fields": {
+            "track": 3,
+            "course": 12,
+            "order": 2
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 13,
+        "fields": {
+            "track": 3,
+            "course": 13,
+            "order": 3
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 14,
+        "fields": {
+            "track": 3,
+            "course": 14,
+            "order": 4
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 15,
+        "fields": {
+            "track": 3,
+            "course": 15,
+            "order": 5
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 16,
+        "fields": {
+            "track": 4,
+            "course": 16,
+            "order": 1
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 17,
+        "fields": {
+            "track": 4,
+            "course": 17,
+            "order": 2
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 18,
+        "fields": {
+            "track": 4,
+            "course": 13,
+            "order": 3
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 19,
+        "fields": {
+            "track": 4,
+            "course": 18,
+            "order": 4
+        }
+    },
+    {
+        "model": "courses.trackcourse",
+        "pk": 20,
+        "fields": {
+            "track": 4,
+            "course": 19,
+            "order": 5
+        }
+    }
+]

@@ -1,0 +1,63 @@
+:root {
+	--nav-text: #0a0a0a;
+	--nav-bg: transparent;
+	--signUp-bg: #fafafa;
+	--signUp-color: #0a0a0a;
+	--logIn-bg: #0031e1;
+	--logIn-color: #ededef;
+	--toggle-bg: rgba(0,0,0,0.06);
+	--toggle-color: #0a0a0a;
+}
+
+body{
+    height: fit-content;
+}
+
+
+.tektur {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+	font-family: 'Tektur', sans-serif;
+}
+
+
+body.dark-mode {
+	--nav-text: #ffffff;
+	--nav-bg: rgba(0,0,0,0.4);
+	--signUp-color: #2b2b2b;
+	--signUp-bg: #ffffff;
+	--logIn-bg: #0050d6;
+	--logIn-color: #ffffff;
+	--toggle-bg: rgba(255,255,255,0.06);
+	--toggle-color: #ffffff;
+    background-image: linear-gradient(#290A66 , #89669D);
+}
+
+*.dark-mode{
+	color:#fff
+}
+body.light-mode {
+	--nav-text: #0a0a0a;
+    --signUp-bg: #2b2b2b;
+	--signUp-color: #ffffff;
+    background-image: linear-gradient( #dbd7d7,  #fffefee6);
+}
+
+
+
+body.light-mode .nav-link:hover{
+     border-radius: 10px;
+     background-color: #d4d4d4;
+}
+
+
+body.dark-mode .nav-link:hover{
+     border-radius: 10px;
+     background-color: #5e0eae71;
+}

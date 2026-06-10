@@ -1,0 +1,286 @@
+.playlist-aside {
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+.summrize-btn {
+    padding:10px;
+    margin:10px;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(rgb(167, 137, 244) , rgb(188, 169, 232) , rgb(230, 198, 232));
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+
+}
+
+.summrize-btn:hover{
+    transform: scale(1.05);
+    transition: transform 50ms linear;
+}
+
+.playlist-aside::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+
+}
+
+
+.playlist-aside::-webkit-scrollbar-thumb {
+    background-color: var(--signUp-bg);
+    border-radius: 10px;
+}
+
+.playlist-aside::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+.vid {
+    margin:20px;
+    border-radius: 20px;
+}
+
+.vid-cont {
+    display: flex;
+    height: 90vh;
+    overflow-y: scroll;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.main-vid-cont {    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0; /* Prevents overflow pushing against 100% width */
+    padding-bottom: 2rem;
+}
+
+.thumb-wrapper {
+  margin:10px;   
+}
+
+.thumb {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main-player-wrapper {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+}
+
+.main-react-player{
+   border-radius: 12px;
+   width: 90%;
+   aspect-ratio: 16 / 9;
+   max-height: 65vh;
+   border: 2px solid black;
+}
+
+.main-h1 {
+    text-align: center;
+}
+
+
+.loader {
+    margin:50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite
+}
+
+.loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid var(--signUp-bg);
+    animation: prixClipFix 2s linear infinite ;
+}
+
+.small-loader {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.small-loader::before {
+    border-width: 4px;
+}
+
+@keyframes rotate {
+    100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
+
+
+.nxt-btn {
+    margin:20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--signUp-bg);
+    color: var(--signUp-color);
+    width: 120px;
+}
+
+.prev-btn {
+    margin:20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--signUp-bg);
+    color: var(--signUp-color);
+    width: 120px;
+}
+
+.vid-controls {
+    width: 100%;
+    margin:10px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.prev-btn:hover , .nxt-btn:hover{
+    transition: transform 0.17s linear;
+    transform: scale(1.05);
+}
+
+.course-name {
+    text-align: center;
+}
+
+.act-vid {
+    border: 3px solid rgb(0, 174, 255);
+}
+
+
+
+/*-------AI--------*/
+
+/* --- Playlist toggle, sliding and responsive layout --- */
+.toggle-playlist-btn {
+    position: fixed;
+    top: 50%;
+    left: 330px;
+    z-index: 1600;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: var(--signUp-bg);
+    color: var(--signUp-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: left 0.35s ease, transform 0.2s ease;
+    transform: translateY(-50%);
+}
+
+.summary-box{
+    margin:auto 30px;
+    padding:10px;
+    background-color:rgba(21, 150, 255, 0.372);
+    border-radius:10px;
+    box-shadow:0px 0px 10px 1px rgba(0, 0, 0, 0.432);
+}
+
+.playlist-aside {
+    width: 320px;
+    min-width: 320px;
+    background-color: inherit; 
+    transition: transform 0.35s ease, width 0.35s ease, min-width 0.35s ease;
+    z-index: 1200;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+    height:100%;
+}
+
+/* When closed slide aside left out of view */
+.vid-cont.aside-closed .playlist-aside {
+    width: 0;
+    min-width: 0;
+    transform: translateX(-100%);
+    border: none;
+}
+
+.vid-cont.aside-closed .toggle-playlist-btn {
+    left: 10px;
+}
+
+.mobile-aside-backdrop { display: none; }
+
+@media (max-width: 768px) {
+    .toggle-playlist-btn {
+        position: fixed;
+        top: 50%;
+        bottom: auto;
+        left: 15px;
+        margin-bottom: 0;
+        transform: translateY(-50%);
+        transition: left 0.35s ease, transform 0.2s ease;
+    }
+    
+    .playlist-aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 80%;
+        min-width: 250px;
+        background-color:rgba(13, 9, 24, 0.952);
+        color: var(--signUp-color);
+        box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+        z-index: 1300;
+    }
+    
+    .vid-cont.aside-open .playlist-aside { 
+        transform: translateX(0); 
+    }
+    
+    .vid-cont.aside-closed .playlist-aside { 
+        transform: translateX(-100%); 
+    }
+
+    .vid-cont.aside-open .toggle-playlist-btn { 
+        left: calc(80% + 10px); 
+    }
+
+    .vid-cont.aside-closed .toggle-playlist-btn { 
+        left: 15px; 
+    }
+    
+    /* Backdrop for mobile to click out */
+    .mobile-aside-backdrop.open {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1100;
+    }
+}
