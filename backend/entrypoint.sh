@@ -20,6 +20,12 @@ if [ "$COURSE_COUNT" = "0" ]; then
     python manage.py loaddata fixtures/trackcourses.json
 
     echo "Fixtures loaded."
+    echo "Courses in database:"
+    python manage.py shell -c "
+    from courses.models import Course
+    print('Course count:', Course.objects.count())
+    print(list(Course.objects.values('id', 'title')))
+    "
 else
     echo "Database already initialized. Skipping fixtures."
 fi
