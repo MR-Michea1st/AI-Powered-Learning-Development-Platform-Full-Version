@@ -28,6 +28,11 @@ if [ "$COURSE_COUNT" = "0" ]; then
     "
 else
     echo "Database already initialized. Skipping fixtures."
+    python manage.py shell -c "
+    from courses.models import Course
+    print('Course count:', Course.objects.count())
+    print(list(Course.objects.values('id', 'title')))
+    "
 fi
 
 exec "$@"
