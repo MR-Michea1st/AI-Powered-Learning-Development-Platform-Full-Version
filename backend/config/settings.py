@@ -223,7 +223,7 @@ CELERY_BROKER_URL = 'redis://redis:6379/0'
 CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
 
 CELERY_BEAT_SCHEDULE = {
-    'send-weekly-report-every-minute': {
+    'send-weekly-report-every-week': {
         'task': 'users.tasks.send_weekly_report', 
         'schedule': crontab(day_of_week='sunday', hour=8, minute=0), 
     },

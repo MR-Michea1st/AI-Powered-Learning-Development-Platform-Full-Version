@@ -9,3 +9,8 @@ media/
 backend/.env
 frontend/.env
 backend/staticfiles/
+
+# Celery Beat schedule
+celerybeat-schedule
+celerybeat-schedule-*
+celerybeat-schedule.*
