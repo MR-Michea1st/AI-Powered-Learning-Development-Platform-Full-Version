@@ -6,6 +6,8 @@ import EnrollmentModal from '../Global_Components/EnrollmentModal';
 import LoginNeededModal from '../Global_Components/LoginNeededModal';
 import { useAuth } from '../../Context/AuthContext.jsx';
 
+const API_URL = import.meta.env.VITE_API_BASE_URL;
+
 export default function TrackItem({ course , userEnrolledCourses }) {
 
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -37,7 +39,7 @@ export default function TrackItem({ course , userEnrolledCourses }) {
         const EnrollCourse = async () => {
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/courses/enroll/',
+            const response = await axios.post(`${API_URL}/api/courses/enroll/`,
             {
                 "course": selectedCourse.id,
             },

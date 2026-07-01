@@ -9,6 +9,7 @@ const API_INTERVIEW_START = '/api/interview/start';
 const API_INTERVIEW_FINISH = '/api/interview/finish';
 const API_HEALTH = '/health';
 const TOTAL_QUESTIONS = 5;
+const API_URL = import.meta.env.VITE_API_BASE_URL
 
 function uid() {
     return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
@@ -83,7 +84,7 @@ export default function AI_Interviewer() {
 
         const fetchTracks = async () => {
            try {
-            const response = await axios.get('http://127.0.0.1:8000/api/tracks/');
+            const response = await axios.get(`${API_URL}/api/tracks/`);
             console.log(response); 
             setTracks(response.data.results);
            }
@@ -101,7 +102,7 @@ export default function AI_Interviewer() {
 
         const fetchUserInfo = async () => {
            try {
-            const response = await axios.get('http://127.0.0.1:8000/auth/profile/' , {
+            const response = await axios.get(`${API_URL}/auth/profile/` , {
                 headers: {
                     Authorization:`Bearer ${token}`
                 }
