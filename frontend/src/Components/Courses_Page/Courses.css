@@ -1,0 +1,131 @@
+.rec-courses , .rec-tracks {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 40px 20px;
+}
+
+.course-card , .track-card{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    margin:auto;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.422);
+    padding:10px;
+    border-radius: 10px;
+    height: 102%;
+}
+
+ 
+.course-card img {
+    width: 100%;
+    display: block;
+    margin:auto;
+    border-radius: 10px;
+}
+
+
+
+.rec-h2 {
+    margin: 30px;
+}
+
+.enroll-btn {
+    
+    border: none;
+    background-color: var(--logIn-bg);
+    cursor: pointer;
+    border-radius: 10px;
+    width:30%;
+    color: white;
+    padding:5px;
+    height:40px;
+    filter: opacity(0);    
+}
+
+.enroll-btn:hover {
+    background-color: rgb(5, 0, 159);
+}
+
+@keyframes slidingLeft {
+
+    20% {
+        filter: opacity(0.2);
+        transform: translateX(20%);
+    }
+
+    40% {
+        filter: opacity(0.4);
+        transform: translateX(70%);
+    }
+
+    60% {
+        filter: opacity(0.6);
+        transform: translateX(120%);
+    }
+    
+    80% {
+        filter: opacity(0.8);
+        transform: translateX(170%);
+    }
+
+    100% {
+        filter: opacity(1);
+        transform: translateX(220%);
+    }
+}
+
+
+.course-card:hover {
+    background-color: rgba(90, 92, 220, 0.521);
+    cursor: pointer;
+    transform: scale(1.05);
+    .enroll-btn {
+         animation-name: slidingLeft;
+         animation-duration: 200ms;
+         animation-fill-mode: forwards;
+         animation-iteration-count: 1; 
+    }
+
+    transition-duration: 500ms;
+    transition-property: all;
+    
+}
+
+.see-more {
+    display: flex;
+    justify-self: center;
+    margin:auto;
+    padding:20px;
+    border: 1px solid rgba(0, 0, 0, 0.119);
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.164);
+    background-color: transparent;
+    justify-content: center;
+    width: 125px;
+    font-weight:600;
+    outline: none;
+}
+
+.see-more:hover{
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.203);
+    text-shadow: skyblue 0px 0px 2px;
+    transform: scale(1.1);
+    transition: all 200ms ease;
+}
+
+@media (max-width:768px) {
+    .rec-courses {
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media (max-width:380px) {
+    .rec-courses {
+        grid-template-columns: auto;
+    }
+
+}
+

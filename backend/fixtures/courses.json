@@ -1,0 +1,306 @@
+[
+    {
+        "model": "courses.course",
+        "pk": 1,
+        "fields": {
+            "name": "Linux for Hackers",
+            "slug": "linux-for-hackers",
+            "description": "Intro to Linux from a hacker�s perspective. Covers command line, file systems, permissions, networking basics, and essential tools used in penetration testing.",
+            "difficulty_level": "BEG",
+            "instructor": 3,
+            "thumbnail": "courses/thumbnails/linuxforhackers-course.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T06:26:20.170Z",
+            "playlist_id": "PLIhvC56v63IJIujb5cyE13oLuyORZpdkL",
+            "tags": "Security,Hacking,OS,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 2,
+        "fields": {
+            "name": "Networking for Ethical Hackers",
+            "slug": "networking-for-ethical-hackers",
+            "description": "Deep dive into networking concepts like TCP/IP, DNS, routing, and packet analysis, focused on how attackers and defenders use them in real-world scenarios.",
+            "difficulty_level": "INT",
+            "instructor": 4,
+            "thumbnail": "courses/thumbnails/networkforethicalhacking.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T06:43:38.250Z",
+            "playlist_id": "PLLKT__MCUeiyUKmYaakznsZeU4lZYwt_j",
+            "tags": "Networking,Security,Hacking,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 3,
+        "fields": {
+            "name": "Python for Cybersecurity",
+            "slug": "python-for-cybersecurity",
+            "description": "Beginner-friendly Python course tailored for security tasks such as automation, scripting, scanning, and basic exploit development.",
+            "difficulty_level": "BEG",
+            "instructor": 5,
+            "thumbnail": "courses/thumbnails/pythonforcybersecurity.jpeg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:23:35.238Z",
+            "playlist_id": "PLwO5-rumi8A5EuBTFVN_kfUsPzeBS0zze",
+            "tags": "Security,Programming,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 4,
+        "fields": {
+            "name": "Ethical Hacking & Penetration Testing",
+            "slug": "ethical-hacking-penetration-testing",
+            "description": "Advanced, hands-on course covering reconnaissance, exploitation, privilege escalation, post-exploitation, and professional pentesting workflows.",
+            "difficulty_level": "ADV",
+            "instructor": 6,
+            "thumbnail": "courses/thumbnails/ethicalhackingandpenetrationtesting.jpeg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:25:41.944Z",
+            "playlist_id": "PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl",
+            "tags": "Security,Hacking,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 5,
+        "fields": {
+            "name": "Web Security / Bug Bounty",
+            "slug": "web-security-bug-bounty",
+            "description": "Practical exploration of web vulnerabilities (XSS, CSRF, etc.), bug bounty methodology, and real-world hacking techniques demonstrated through challenges.",
+            "difficulty_level": "ADV",
+            "instructor": 7,
+            "thumbnail": "courses/thumbnails/websecuritybugbounty.jpeg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:27:01.489Z",
+            "playlist_id": "PLhixgUqwRTjx2BmNF5-GddyqZcizwLLGP",
+            "tags": "Security,Web,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 6,
+        "fields": {
+            "name": "Neural Networks for Beginners",
+            "slug": "neural-networks",
+            "description": "Visual and intuitive explanation of neural networks, backpropagation, and deep learning fundamentals using animations and conceptual thinking.",
+            "difficulty_level": "BEG",
+            "instructor": 8,
+            "thumbnail": "courses/thumbnails/NeuralNetworks.jpeg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:30:18.395Z",
+            "playlist_id": "PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",
+            "tags": "AI,Algorithms,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 7,
+        "fields": {
+            "name": "Math for Machine Learning",
+            "slug": "math-for-machine-learning",
+            "description": "Covers essential math topics like linear algebra, calculus, and probability required to understand ML algorithms",
+            "difficulty_level": "INT",
+            "instructor": 9,
+            "thumbnail": "courses/thumbnails/mathforml.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:32:33.931Z",
+            "playlist_id": "PLD80i8An1OEGZ2tYimemzwC3xqkU0jKUg",
+            "tags": "AI,Math,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 8,
+        "fields": {
+            "name": "Machine Learning Specialization",
+            "slug": "machine-learning-specialization",
+            "description": "Structured introduction to ML concepts including supervised learning, regression, classification, and model evaluation.",
+            "difficulty_level": "INT",
+            "instructor": 10,
+            "thumbnail": "courses/thumbnails/deeplearningai.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:34:34.773Z",
+            "playlist_id": "PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI",
+            "tags": "AI,Algorithms,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 9,
+        "fields": {
+            "name": "Practical Deep Learning for Coders",
+            "slug": "practical-deep-learning-for-coders",
+            "description": "Hands-on deep learning using real datasets, focusing on building models quickly with modern frameworks like PyTorch.",
+            "difficulty_level": "ADV",
+            "instructor": 11,
+            "thumbnail": "courses/thumbnails/practicaldlforcoders.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:36:17.188Z",
+            "playlist_id": "PLfYUBJiXbdtSvpQjSnJJ_PmDQB_VyT5iU",
+            "tags": "AI,Algorithms,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 10,
+        "fields": {
+            "name": "From Zero to Hero in Neural Networks",
+            "slug": "from-zero-to-hero-in-neural-networks",
+            "description": "In-depth, low-level understanding of neural networks by building them from scratch, including backpropagation and training loops.",
+            "difficulty_level": "ADV",
+            "instructor": 12,
+            "thumbnail": "courses/thumbnails/zerotheroneuralnetworks.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:37:54.279Z",
+            "playlist_id": "PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
+            "tags": "AI,Algorithms,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 11,
+        "fields": {
+            "name": "HTML, CSS, JavaScript & Bootstrap Tutorial",
+            "slug": "html-css-javascript-bootstrap-tutorial",
+            "description": "Beginner course covering frontend fundamentals, responsive design, and building static websites.",
+            "difficulty_level": "BEG",
+            "instructor": 13,
+            "thumbnail": "courses/thumbnails/webdevforbeginners_7plrcZl.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:41:58.736Z",
+            "playlist_id": "PLwoh6bBAszPrNlrMqJXnb9G6MdgSfN686",
+            "tags": "Front-End,Web,Programming,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 12,
+        "fields": {
+            "name": "React JS Tutorial for Beginners",
+            "slug": "react-js-tutorial-for-beginners",
+            "description": "Introduction to React concepts like components, hooks, state management, and building modern UI applications.",
+            "difficulty_level": "BEG",
+            "instructor": 14,
+            "thumbnail": "courses/thumbnails/reactjs-course.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:43:37.442Z",
+            "playlist_id": "PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3",
+            "tags": "Front-End,Web,Programming,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 13,
+        "fields": {
+            "name": "SQL Ultimate Course",
+            "slug": "sql-ultimate-course",
+            "description": "Covers SQL fundamentals, joins, indexing, optimization, and real-world database querying.",
+            "difficulty_level": "INT",
+            "instructor": 15,
+            "thumbnail": "courses/thumbnails/sql-course.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:45:05.081Z",
+            "playlist_id": "PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe",
+            "tags": "Databases,Web,System_Design,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 14,
+        "fields": {
+            "name": "Complete Django Tutorial",
+            "slug": "complete-django-tutorial",
+            "description": "Full-stack backend development using Django: models, views, templates, authentication, and deployment basics.",
+            "difficulty_level": "INT",
+            "instructor": 16,
+            "thumbnail": "courses/thumbnails/djangonetninjatutorial.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:46:09.024Z",
+            "playlist_id": "PL4cUxeGkcC9iqfAag3a_BKEX1N43uJutw",
+            "tags": "Back-End,Programming,Web"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 15,
+        "fields": {
+            "name": "Django REST Framework - API Development with Django",
+            "slug": "django-rest-framework-api-development-with-django",
+            "description": "Advanced API development with Django REST Framework, including serializers, authentication, and scalable backend design.",
+            "difficulty_level": "ADV",
+            "instructor": 17,
+            "thumbnail": "courses/thumbnails/djangorestframework.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:47:54.622Z",
+            "playlist_id": "PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t",
+            "tags": "Back-End,Programming,Web,System_Design,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 16,
+        "fields": {
+            "name": "C++",
+            "slug": "c",
+            "description": "Modern C++ programming, memory management, OOP, and performance-focused coding practices.",
+            "difficulty_level": "BEG",
+            "instructor": 18,
+            "thumbnail": "courses/thumbnails/cpp-course.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:49:19.198Z",
+            "playlist_id": "PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb",
+            "tags": "Programming,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 17,
+        "fields": {
+            "name": "Data Structures and Algorithms",
+            "slug": "data-structures-and-algorithms",
+            "description": "Beginner-friendly explanation of arrays, linked lists, stacks, queues, trees, and sorting/searching algorithms.",
+            "difficulty_level": "BEG",
+            "instructor": 19,
+            "thumbnail": "courses/thumbnails/dsandalgorithms.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:50:37.248Z",
+            "playlist_id": "PLZPZq0r_RZON1eaqfafTnEexRzuHbfZX8",
+            "tags": "Algorithms,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 18,
+        "fields": {
+            "name": "Operating Systems",
+            "slug": "operating-systems",
+            "description": "Advanced OS concepts like processes, threads, scheduling, memory management, and file systems.",
+            "difficulty_level": "ADV",
+            "instructor": 20,
+            "thumbnail": "courses/thumbnails/OScourse.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:51:57.211Z",
+            "playlist_id": "PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O",
+            "tags": "Hardware,OS,"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 19,
+        "fields": {
+            "name": "Computer Networking",
+            "slug": "computer-networking",
+            "description": "Detailed explanation of network layers, protocols, routing, switching, and real-world communication systems.",
+            "difficulty_level": "ADV",
+            "instructor": 20,
+            "thumbnail": "courses/thumbnails/computernetworksnesoacademy.jpg",
+            "status": "PSH",
+            "created_at": "2026-04-23T07:52:58.905Z",
+            "playlist_id": "PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx",
+            "tags": "Networking,Security"
+        }
+    }
+]

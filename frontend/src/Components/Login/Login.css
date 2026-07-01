@@ -1,0 +1,240 @@
+.login-container {
+  width: 70%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.295);
+  text-align: center;
+  font-size: x-large;
+}
+
+.error {
+  color: red;
+  font-size: 15px;
+  padding:2px;
+  margin:0;
+
+}
+
+.login-form {
+  width: 100%;
+}
+
+.input-group{
+  margin:10px;
+  border-radius: 10px;
+  padding:10px;
+  width: 60%;
+  border: 1px solid rgba(0, 0, 0, 0.461);
+  margin-right: 0 ;
+  height: 40px;
+}
+
+.login-btn{
+  padding:10px 30px;
+  margin-top: 10px;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: var(--logIn-bg);
+  color: white; 
+}
+
+.login-btn:hover{
+  /* background-color: rgb(3, 18, 188); */
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px rgba(168, 234, 252, 0.6);
+  text-shadow: 0px 0px 5px rgba(168, 234, 252, 0.82);
+  transition: all 0.2s ease;
+}
+
+
+.or-cont{
+  margin:auto;
+  padding:10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.login-hr{
+  width: 40%;
+  height: 1%;
+  margin: auto;
+  border: 1px solid var(--signUp-bg);
+}
+
+input[label="Password"].input-group {
+   width: 57%;
+   border-right: none;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+
+}
+
+.input-group:focus{
+  outline: none;
+}
+
+
+.showPass-eye{
+  background:white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.461);
+  border-left: none;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 40px;
+}
+
+.continue-with{
+  width: 40%;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.502);
+  cursor: pointer;
+  display: flex;
+  font-size:15px;
+}
+
+.continue-with:hover{
+    background-color: rgb(206, 206, 203);
+     border: 1px solid rgba(0, 0, 0, 1);
+ 
+
+}
+
+.continue-btns{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+}
+
+
+@media (max-width:768px) {
+  .login-container{
+    width:100%;
+  }
+  .continue-with p{
+     font-size:12px; 
+  }
+
+  .login-container h1{
+    text-wrap: wrap;
+  }
+
+  .continue-with img {
+     margin:auto 10px;
+  }
+
+}
+
+@media (max-width:420px) {
+  .continue-with p{
+    display: none;
+  }
+
+  .continue-with img {
+     margin:2px auto !important;
+  }
+
+  .login-container h1{
+    text-wrap: wrap;
+  }
+}
+
+/* Error Modal Styles */
+.error-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.error-modal {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-modal-header {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+}
+
+.error-modal-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.error-modal-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.error-modal-body p {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.error-modal-footer {
+  padding: 15px 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.error-modal-btn {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.error-modal-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+}
+
+.error-modal-btn:active {
+  transform: translateY(0);
+}
