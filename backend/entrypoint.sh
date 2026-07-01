@@ -6,10 +6,7 @@ python manage.py migrate
 
 echo "Checking if database needs initialization..."
 
-COURSE_COUNT=$(python manage.py shell -c "
-from courses.models import Course
-print(Course.objects.count())
-" | tail -n 1)
+COURSE_COUNT=$(python manage.py shell -c "from courses.models import Course; print(Course.objects.count())" | tail -n 1)
 
 if [ "$COURSE_COUNT" = "0" ]; then
     echo "Loading initial fixtures..."
@@ -21,18 +18,10 @@ if [ "$COURSE_COUNT" = "0" ]; then
 
     echo "Fixtures loaded."
     echo "Courses in database:"
-    python manage.py shell -c "
-    from courses.models import Course
-    print('Course count:', Course.objects.count())
-    print(list(Course.objects.values('id', 'title')))
-    "
+    python manage.py shell -c "from courses.models import Course; print('Course count:', Course.objects.count()); print(list(Course.objects.values('id', 'name')))"
 else
     echo "Database already initialized. Skipping fixtures."
-    python manage.py shell -c "
-    from courses.models import Course
-    print('Course count:', Course.objects.count())
-    print(list(Course.objects.values('id', 'title')))
-    "
+    python manage.py shell -c "from courses.models import Course; print('Course count:', Course.objects.count()); print(list(Course.objects.values('id', 'name')))"
 fi
 
 exec "$@"
