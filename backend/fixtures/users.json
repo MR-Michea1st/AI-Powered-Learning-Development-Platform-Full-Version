@@ -720,25 +720,5 @@
             "groups": [],
             "user_permissions": []
         }
-    },
-    {
-        "model": "users.user",
-        "pk": 44,
-        "fields": {
-            "password": "pbkdf2_sha256$1200000$nfNniljmHsjoTHHzN7QrFI$UMoEex+I86ewMp4q4Ymw2ZRbc6QnT9rxhnTUyvbIgQ8=",
-            "last_login": null,
-            "is_superuser": false,
-            "email": "michojabbour5@gmail.com",
-            "full_name": "michojabbour5",
-            "role": "STU",
-            "skill_level": "BEG",
-            "profile_picture": "",
-            "is_active": true,
-            "is_staff": false,
-            "is_verified": false,
-            "otp_secret": "CZ2PJTCYP6FQIQRYSY6ANASX6TYVCEXU",
-            "groups": [],
-            "user_permissions": []
-        }
     }
 ]

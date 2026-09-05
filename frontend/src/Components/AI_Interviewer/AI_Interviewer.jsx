@@ -17,6 +17,7 @@ function uid() {
 
 export default function AI_Interviewer() {
     // Helper function to get initial session state from sessionStorage
+    const ai = import.meta.env.VITE_API_AI_URL
     const getInitialSessionState = () => {
         try {
             const saved = sessionStorage.getItem('interviewSession');
@@ -72,7 +73,7 @@ export default function AI_Interviewer() {
 
     async function refreshHealth() {
         try {
-            const r = await fetch(`http://127.0.0.1:8001/interviewer${API_HEALTH}`);
+            const r = await fetch(`${ai}/interviewer${API_HEALTH}`);
             const data = await r.json();
             setMeta((m) => ({ ...m, backendOk: !!data?.ok, model: data?.model || m.model }));
         } catch {
@@ -196,7 +197,7 @@ export default function AI_Interviewer() {
 
         const t0 = performance.now();
         try {
-            const resp = await fetch(`http://127.0.0.1:8001/interviewer${API_INTERVIEW_START}`, {
+            const resp = await fetch(`${ai}/interviewer${API_INTERVIEW_START}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ specialization: topic }),
@@ -272,7 +273,7 @@ export default function AI_Interviewer() {
 
         const t0 = performance.now();
         try {
-            const resp = await fetch(`http://127.0.0.1:8001/interviewer${API_INTERVIEW_FINISH}`, {
+            const resp = await fetch(`${ai}/interviewer${API_INTERVIEW_FINISH}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

@@ -2,8 +2,6 @@ import "./Signup.css";
 import SignupForm from "./SignupForm";
 import Button from "../Global_Components/Button.jsx";
 import pic1 from "../../assets/imgs/Google.png";
-import pic2 from "../../assets/imgs/LinkedIn.png";
-import pic3 from "../../assets/imgs/Github.png";
 import { useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -11,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 export default function SignupPage() {
 
     const navigate = useNavigate();
-
+    const backend = import.meta.env.VITE_API_BASE_URL
     const handleGoogleAuth = useGoogleLogin({
         onSuccess: async (credentialResponse) => {
             const googleToken = credentialResponse.access_token
@@ -19,7 +17,7 @@ export default function SignupPage() {
             
             try {
                 
-                const response = await axios.post('http://localhost:8000/auth/google/' , 
+                const response = await axios.post(`${backend}/auth/google/` , 
                     {
                             access_token: googleToken,
                         
@@ -55,7 +53,7 @@ export default function SignupPage() {
             import.meta.env.VITE_GITHUB_CLIENT_ID
 
         const redirectUri =
-            "http://localhost:3000/github/callback"
+            `${backend}/github/callback`
 
         const githubUrl =
             `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}`

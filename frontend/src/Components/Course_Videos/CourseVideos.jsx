@@ -6,7 +6,7 @@ import axios from 'axios';
 const API_URL = import.meta.env.VITE_API_BASE_URL;
 
 function CourseVideos({courseSlug}) {
-
+    const backend = import.meta.env.VITE_API_AI_URL;
     const [activeVideo, setActiveVideo] = useState(null);
     const [Videos, setVideos] = useState([]);
     const [idxPlaying , setIdxPlaying] = useState(0);
@@ -92,7 +92,7 @@ function CourseVideos({courseSlug}) {
       setLoadingSummary(true);
       setSummaryError('');
       try {
-        const response = await axios.post('http://127.0.0.1:8001/summary/api/youtube' , {
+        const response = await axios.post(`${backend}/summary/api/youtube` , {
           url:`https://www.youtube.com/embed/${activeVideo.snippet.resourceId.videoId}`,
           mode:'summary'
         })

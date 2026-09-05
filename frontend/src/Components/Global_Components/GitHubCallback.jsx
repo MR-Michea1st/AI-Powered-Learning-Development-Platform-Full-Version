@@ -6,7 +6,7 @@ import './GitHubCallback.css'
 function GitHubCallback() {
 
     const navigate = useNavigate()
-
+    const backend = import.meta.env.VITE_API_BASE_URL
     useEffect(() => {
 
         const code = new URLSearchParams(window.location.search).get("code")
@@ -20,7 +20,7 @@ function GitHubCallback() {
             try {
 
                 const response = await axios.post(
-                    "http://localhost:8000/auth/github/",
+                    `${backend}/auth/github/`,
                     {
                         code: code
                     }
